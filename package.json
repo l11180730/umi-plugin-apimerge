@@ -1,0 +1,29 @@
+{
+  "name": "umi-plugin-apimerge",
+  "version": "0.0.1",
+  "description": "umi 合并api 插件，plugin-apimerge",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l11180730/umi-plugin-apimerge"
+  },
+  "keywords": [
+    "umi"
+  ],
+  "authors": [
+    "LQ <545501972@qq.com>"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/l11180730/umi-plugin-apimerge/issues",
+  "homepage": "https://github.com/l11180730/umi-plugin-apimerge",
+  "peerDependencies": {
+    "umi": "3.x"
+  },
+  "publishConfig": {},
+  "dependencies": {}
+}
