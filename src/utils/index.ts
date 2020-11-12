@@ -27,8 +27,13 @@ export const genCodes = (imports: string[]) =>
 interface RequestApis extends ${exportItems[0].join(', ')}{};
 interface ResponseApis extends ${exportItems[1].join(', ')}{};
 
-export type Request<T extends keyof RequestApis> = RequestApis[T];
-export type Response<T extends keyof ResponseApis> = ResponseApis[T];
+type Request<T extends keyof RequestApis> = RequestApis[T];
+type Response<T extends keyof ResponseApis> = ResponseApis[T];
+export declare namespace MAPI {
+  type ApiKeys = keyof ResponseApis & keyof RequestApis;
+  type Request<T extends ApiKeys> = RequestApis[T];
+  type Response<T extends ApiKeys> = ResponseApis[T];
+};
 `,
     ].join(EOL);
     return codes;

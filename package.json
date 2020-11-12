@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-apimerge",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "umi 合并api 插件，plugin-apimerge",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -24,6 +24,5 @@
   "peerDependencies": {
     "umi": "3.x"
   },
-  "publishConfig": {},
   "dependencies": {}
 }

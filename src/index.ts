@@ -29,7 +29,7 @@ export default (api: IApi) => {
       // IAPI.ts
       api.writeTmpFile({
         content: codes,
-        path: `${DIR_NAME_IN_TMP}/MAPI.d.ts`,
+        path: `${DIR_NAME_IN_TMP}/MAPI.ts`,
       });
     } catch (e) {
       console.error(e);
